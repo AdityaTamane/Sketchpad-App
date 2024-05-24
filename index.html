@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sketchpad</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="app-container">
+    <div class="canvas-container">
+      <canvas id="canvas" width="600" height="400"></canvas>
+    </div>
+    <div class="controls-container">
+      <div class="color-controls">
+        <input type="color" id="colorPicker" value="#000000">
+        <input type="range" id="lineWidth" min="1" max="20" value="5">
+      </div>
+      <div class="tool-controls">
+        <button id="clearCanvas" class="tool-btn">Clear</button>
+        <button id="toggleEraser" class="tool-btn">Eraser</button>
+        <input type="file" id="fileInput" accept="image/*" style="display: none;">
+        <button id="addImage" class="tool-btn">Insert Image</button>
+        <button id="saveCanvas" class="tool-btn">Save</button>
+      </div>
+      <textarea id="notepad" placeholder="Take notes here..."></textarea>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
